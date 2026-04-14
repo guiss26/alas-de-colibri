@@ -1,0 +1,11 @@
+# Dependencias
+node_modules/
+
+# Variables de entorno (NUNCA subir esto a GitHub)
+.env
+
+# Archivos de sistema
+.DS_Store
+
+# Build de producción
+client/dist
