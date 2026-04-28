@@ -25,7 +25,8 @@ export default function Footer() {
 
                         <div className="flex items-center gap-4">
                             <p className="flex items-center gap-1"><LuMail /> anaferm79@gmail.com</p>
-                            <Link to="https://www.instagram.com/alasdecolibri_l.a/"><FaInstagram /></Link>
+                            <Link to="https://www.instagram.com/alasdecolibri_l.a/" className="flex items-center gap-1"><FaInstagram />alasdecolibri_l.a</Link>
+                            {/* a lo mejor poner uno debajo de otro */}
                         </div>
 
                         {/* <div> a lo mejor poner las tarjetas que se aceptan
