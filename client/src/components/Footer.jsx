@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function Footer() {
     return (
         <>
-            <footer className="bg-almond-silk-50 p-10 text-neutral-500">
+            <footer className="bg-almond-silk-50 pt-10 px-10 pb-7 text-neutral-500">
                 <section className="flex justify-between ">
                     <div className="flex-1 flex flex-col gap-3 px-5 ">
                         <h3 className="text-md font-bold ">Alas de Colibrí</h3>
@@ -35,8 +35,8 @@ export default function Footer() {
                     </div>
                 </section>
 
-                <section className="text-center mt-8 pt-10 border-t border-neutral-400">
-                    <p>© 2026 Alas de Colibrí. Hecho a mano con el corazón.</p>
+                <section className="text-center mt-8 pt-7 border-t border-neutral-400">
+                    <p className="text-xs">© 2026 Alas de Colibrí. Hecho a mano con el corazón.</p>
                 </section>
             </footer>
         </>
