@@ -4,10 +4,12 @@ import Navbar from "../components/Navbar";
 
 export default function Layout() {
     return (
-        <>
-        <Navbar />
-        <Outlet />
-        <Footer />
-        </>
+        <div className="flex flex-col min-h-screen bg-neutral-50">
+            <Navbar />
+            <main className="flex-1">
+                <Outlet />
+            </main>
+            <Footer />
+        </div>
     )
 }
