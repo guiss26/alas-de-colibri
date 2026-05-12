@@ -1,6 +1,23 @@
 @import "tailwindcss";
 
 @theme {
+  /* COLORES PRINCIPALES  */
+  --color-turquesa-suave: #B8E0D8; /*Color principal, botones primarios*/
+  --color-verde-salvia: #c9e8c5; /*Fondo de secciones alternas*/
+  --color-dorado-palido: #E8D8A0; /*Detalles, precios, badges*/
+  --color-lavanda: #D4C5E8; /*Hover, etiquetas, tags*/
+
+  /* FONDOS Y SUPERFICIES */
+  --color-crema: #F7F4EE; /*Fondo general de la página*/
+  ---color-blanco: #FFFFFF; /*Tarjetas de productos*/
+  --color-menta-suave: #EDF6F4 /*Fondo del header y footer*/
+
+  /* TEXTO  */
+  --color-verde-oscuro: #2C4A45; /*Texto principal, títulos, nav*/
+  --color-grisaceo: #5A7A75; /*Texto secundarios, descripciones*/
+  --color-verde-tenue: #9BB5B0; /*Placeholder, texto desactivado*/
+
+  
 
   /* powder-petal */
   --color-powder-petal-50: rgb(248 242 236);
