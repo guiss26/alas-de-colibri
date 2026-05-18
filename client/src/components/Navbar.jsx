@@ -52,11 +52,11 @@ export default function Navbar() {
             {/* Navegación Móvil */}
             {isOpen && (
                 <nav className="md:hidden flex flex-col bg-almond-silk-100/30 border-t border-gray-100">
-                    <Link onClick={() => setIsOpen(false)} to="/" className="hover:text-gray-700 hover:bg-almond-silk-100/70 p-3 text-sm md:text-base">Inicio</Link>
-                    <Link onClick={() => setIsOpen(false)} to="/crear-tu-joya" className="hover:text-gray-700 hover:bg-almond-silk-100/70 p-3 text-sm md:text-base">Crear tu Joya</Link>
-                    <Link onClick={() => setIsOpen(false)} to="/joya-personalizada" className="hover:text-gray-700 hover:bg-almond-silk-100/70 p-3 text-sm md:text-base">Joya Personalizada</Link>
-                    <Link onClick={() => setIsOpen(false)} to="/sobre-nosotros" className="hover:text-gray-700 hover:bg-almond-silk-100/70 p-3 text-sm md:text-base">Sobre Nosotros</Link>
-                    <Link onClick={() => setIsOpen(false)} to="/contacto" className="hover:text-gray-700 hover:bg-almond-silk-100/70 p-3 text-sm md:text-base">Contacto</Link>
+                    <Link onClick={() => setIsOpen(false)} to="/" className="hover:text-gray-700 hover:bg-almond-silk-100/70 py-3 p-5 text-sm md:text-base">Inicio</Link>
+                    <Link onClick={() => setIsOpen(false)} to="/crear-tu-joya" className="hover:text-gray-700 hover:bg-almond-silk-100/70 py-3 p-5  text-sm md:text-base">Crear tu Joya</Link>
+                    <Link onClick={() => setIsOpen(false)} to="/joya-personalizada" className="hover:text-gray-700 hover:bg-almond-silk-100/70 py-3 p-5 text-sm md:text-base">Joya Personalizada</Link>
+                    <Link onClick={() => setIsOpen(false)} to="/sobre-nosotros" className="hover:text-gray-700 hover:bg-almond-silk-100/70 py-3 p-5 text-sm md:text-base">Sobre Nosotros</Link>
+                    <Link onClick={() => setIsOpen(false)} to="/contacto" className="hover:text-gray-700 hover:bg-almond-silk-100/70 py-3 p-5 text-sm md:text-base">Contacto</Link>
                 </nav>
             )}
         </>
