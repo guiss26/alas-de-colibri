@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+
 @import "tailwindcss";
 
 @theme {
@@ -172,8 +174,13 @@
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
-  --base-text: 'Lora', 'Georgia', serif;
-  --heading: 'Playfair Display', 'Georgia', serif;
+  /* --base-text: 'Lora', 'Georgia', serif;
+  --heading: 'Playfair Display', 'Georgia', serif; */
+
+  --base-text: "Cormorant Garamond",
+    serif;
+  --heading: "Josefin Sans",
+    sans-serif;
   /* --mono: ui-monospace, Consolas, monospace; */
   --button-text: 'Lora', 'Georgia', serif;
 
@@ -237,3 +244,10 @@ body {
   /* flex-direction: column; */
 }
 
+h1 {
+  font-family: var(--heading);
+}
+
+p, a {
+  font-weight: 500;
+}
