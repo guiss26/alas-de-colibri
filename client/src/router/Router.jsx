@@ -16,19 +16,19 @@ const routerClient = createBrowserRouter([{
             element: <HomePage />
         },
         {
-            path: "/crear-tu-joya",
+            path: "crear-tu-joya",
             element: <CustomJewelryPage />
         }, 
         {
-            path: "/joya-personalizada",
+            path: "joya-personalizada",
             element: <JewelryBuilderPage />
         }, 
         {
-            path: "/sobre-nosotros",
+            path: "sobre-nosotros",
             element: <AboutPage />
         },
         {
-            path: "/contacto",
+            path: "contacto",
             element: <ContactPage />
         }
     ]
