@@ -5,6 +5,19 @@
 @theme {
   /* COLORES PRINCIPALES  */
   --color-turquesa-suave: #B8E0D8; /*Color principal, botones primarios*/
+  /* turquesa-suave */
+    --color-turquesa-suave-50: rgb(245 251 249);
+    --color-turquesa-suave-100: rgb(235 247 244);
+    --color-turquesa-suave-200: rgb(216 238 232);
+    --color-turquesa-suave-300: rgb(197 229 220);
+    --color-turquesa-suave-400: rgb(178 220 208);
+    --color-turquesa-suave-500: rgb(184 224 216); /* color base #B8E0D8 */
+    --color-turquesa-suave-600: rgb(147 179 173);
+    --color-turquesa-suave-700: rgb(110 134 130);
+    --color-turquesa-suave-800: rgb(74 90 86);
+    --color-turquesa-suave-900: rgb(37 45 43);
+    --color-turquesa-suave-950: rgb(26 32 30);
+
   --color-verde-salvia: #c9e8c5; /*Fondo de secciones alternas*/
   --color-dorado-palido: #E8D8A0; /*Detalles, precios, badges*/
   --color-lavanda: #D4C5E8; /*Hover, etiquetas, tags*/
@@ -19,7 +32,12 @@
   --color-grisaceo: #5A7A75; /*Texto secundarios, descripciones*/
   --color-verde-tenue: #9BB5B0; /*Placeholder, texto desactivado*/
 
-  
+  /* Otra gama  */
+  --color-ment-soft: #C9E8E6; /*Secciones o tarjetas*/
+  --color-turquesa: #7EC8C8; /*Color principal de marca*/
+  --color-teal: #4AADAD; /*Botones, detalles*/
+  --color-azul-pizarra: #3A8FA0;/*Texto principal, bordes*/
+  --color-blanco-perla: #EEF8F8;/*Fondo general de la página*/
 
   /* powder-petal */
   --color-powder-petal-50: rgb(248 242 236);
