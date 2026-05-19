@@ -9,13 +9,13 @@ export default function Navbar() {
         <>
             {/* el header lo tenía a bg-almond-silk-50  */}
             <header className="bg-almond-silk-100/50 sticky top-0 z-50 backdrop-blur-sm border-b border-gray-100 shadow-sm">
-                <div className="flex items-center justify-between p-4">
+                <div className="flex items-center justify-between py-3 px-4">
                     {/* logo */}
                     <div className="">
                         <Link to="/" className="flex items-center">
-                            <img src="/public/colibri-logo.png" alt="logo" className="size-15" />
+                            <img src="/colibri-logo.png" alt="logo" className="size-15" />
                             <div className="text-left">
-                                <h2 className="text-sm md:text-xl">Alas de Colibrí</h2>
+                                <h2 className="text-sm md:text-xl tracking-widest">Alas de Colibrí</h2>
                                 <p className="text-xs">Bisutería artesanal</p>
                             </div>
                         </Link>
