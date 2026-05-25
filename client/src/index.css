@@ -24,7 +24,7 @@
 
   /* FONDOS Y SUPERFICIES */
   --color-crema: #F7F4EE; /*Fondo general de la página*/
-  ---color-blanco: #FFFFFF; /*Tarjetas de productos*/
+  --color-blanco: #FFFFFF; /*Tarjetas de productos*/
   --color-menta-suave: #EDF6F4 /*Fondo del header y footer*/
 
   /* TEXTO  */
@@ -38,6 +38,19 @@
   --color-teal: #4AADAD; /*Botones, detalles*/
   --color-azul-pizarra: #3A8FA0;/*Texto principal, bordes*/
   --color-blanco-perla: #EEF8F8;/*Fondo general de la página*/
+
+  /*Colores figma */
+  --color-primary-dark-teal: #009B8B;
+  --color-primary-turquoise: #3d8f8f; /*Antes: #40E0D0*/
+  --color-light-turquoise: #4db5b8;
+  --color-dark-turquoise: #255657;
+  --color-sage: #87A878;
+  --color-gold: #D4AF37;
+  --color-cream: #FFF8E7;
+  --color-charcoal: #36454F;
+  --color-fondo: #FFFCF5;
+  /* --color-fondo: #F9FAFA; */
+  --color-accents: #D4AF37;
 
   /* powder-petal */
   --color-powder-petal-50: rgb(248 242 236);
@@ -254,18 +267,19 @@ body {
 #root {
   /* width: 1126px; */
   max-width: 100%;
-  /* margin: 0 auto; */
-  /* text-align: center; */
+  
   /* border-inline: 1px solid var(--border); */
   /* min-height: 100svh; */
-  /* display: flex; */
-  /* flex-direction: column; */
 }
 
-h1 {
+h1, h2 {
   font-family: var(--heading);
 }
 
 p, a {
   font-weight: 500;
+}
+
+.logo-title {
+  font-family: var(--base-text);
 }
