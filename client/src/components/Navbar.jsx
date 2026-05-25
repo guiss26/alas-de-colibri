@@ -8,7 +8,7 @@ export default function Navbar() {
     return (
         <>
             {/* el header lo tenía a bg-almond-silk-50  */}
-            <header className="bg-turquesa-suave-500/50 sticky top-0 z-50 backdrop-blur-sm border-b border-gray-100 shadow-sm">
+            <header className="bg-turquesa-suave-500/30 sticky top-0 z-50 backdrop-blur-sm border-b border-gray-100 shadow-sm">
                 <div className="flex items-center justify-between py-3 px-4">
                     {/* logo */}
                     <div className="">
