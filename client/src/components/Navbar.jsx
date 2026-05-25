@@ -15,7 +15,7 @@ export default function Navbar() {
                         <Link to="/" className="flex items-center">
                             <img src="/colibri-logo.png" alt="logo" className="size-15" />
                             <div className="text-left">
-                                <h2 className="text-base md:text-3xl tracking-widest">Alas de Colibrí</h2>
+                                <h2 className="logo-title text-base md:text-3xl tracking-widest">Alas de Colibrí</h2>
                                 <p className="text-sm">Bisutería artesanal</p>
                             </div>
                         </Link>
