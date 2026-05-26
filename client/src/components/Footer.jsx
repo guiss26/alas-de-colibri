@@ -1,31 +1,33 @@
 import { FaInstagram } from "react-icons/fa";
 import { LuMail } from "react-icons/lu";
 import { Link } from "react-router-dom";
+import { GoLocation } from "react-icons/go";
 
 export default function Footer() {
     return (
         <>
-            <footer className="bg-turquesa-suave-200 pt-10 px-4 md:px-10 pb-7 text-neutral-700">
+            <footer className="bg-footer pt-10 px-4 md:px-10 pb-7 text-white">
                 <section className="flex flex-col gap-5 md:flex-row justify-between">
                     <div className="flex-1 flex flex-col gap-3 px-5 ">
-                        <h3 className="text-xl font-bold ">Alas de Colibrí</h3>
-                        <p className="text-xs md:text-base">Bisutería artesanal hecha a mano con y amor y dedicación. Cada pieza es única como tú.</p>
+                        <h3 className="text-xl text-coffe-caramel">Alas de Colibrí</h3>
+                        <p className="text-xs md:text-sm font-light">Bisutería artesanal hecha a mano con y amor y dedicación. Cada pieza es única como tú.</p>
                     </div>
 
                     <div className="flex-1 flex flex-col gap-3 px-5">
-                        <h3 className="text-xl font-bold">Enlaces</h3>
-                        <Link className="text-xs md:text-base">Inicio</Link>
-                        <Link className="text-xs md:text-base">Crear tu Joya</Link>
-                        <Link className="text-xs md:text-base">Sobre Nosotros</Link>
-                        <Link className="text-xs md:text-base">Contacto</Link>
+                        <h3 className="text-xl text-coffe-caramel">Enlaces</h3>
+                        <Link className="text-xs md:text-sm font-light">Inicio</Link>
+                        <Link className="text-xs md:text-sm font-light">Crear tu Joya</Link>
+                        <Link className="text-xs md:text-sm font-light">Sobre Nosotros</Link>
+                        <Link className="text-xs md:text-sm font-light">Contacto</Link>
                     </div>
 
                     <div className="flex-1 flex flex-col gap-3 px-5">
-                        <h3 className="text-xl font-bold">Contacto</h3>
+                        <h3 className="text-xl text-coffe-caramel">Contacto</h3>
 
-                        <div className="flex flex-col gap-2 md:flex-row md:items-center md:gap-4">
-                            <p className="text-xs flex items-center gap-1 md:text-base"><LuMail /> anaferm79@gmail.com</p>
-                            <Link to="https://www.instagram.com/alasdecolibri_l.a/" className="text-xs flex items-center gap-1 md:text-base"><FaInstagram />alasdecolibri_l.a</Link>
+                        <div className="flex flex-col gap-2">
+                            <p className="text-xs md:text-sm font-light flex items-center gap-1"><LuMail /> anaferm79@gmail.com</p>
+                            <Link to="https://www.instagram.com/alasdecolibri_l.a/" className="text-xs md:text-sm font-light flex items-center gap-1"><FaInstagram />alasdecolibri_l.a</Link>
+                            <p className="text-xs md:text-sm font-light flex items-center gap-1"><GoLocation /> España</p>
                             {/* a lo mejor poner uno debajo de otro */}
                         </div>
 
