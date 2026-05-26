@@ -8,26 +8,26 @@ export default function Navbar() {
     return (
         <>
             {/* el header lo tenía a bg-almond-silk-50  */}
-            <header className="bg-turquesa-suave-400/30 sticky top-0 z-50 backdrop-blur-sm border-b border-gray-100 shadow-sm">
+            <header className="bg-blanco sticky top-0 z-50 backdrop-blur-sm border-b border-gray-100 shadow-sm">
                 <div className="flex items-center justify-between py-3 px-4">
                     {/* logo */}
                     <div className="">
                         <Link to="/" className="flex items-center">
                             <img src="/colibri-logo.png" alt="logo" className="size-15" />
                             <div className="text-left">
-                                <h2 className="logo-title text-base md:text-3xl tracking-widest">Alas de Colibrí</h2>
-                                <p className="text-sm">Bisutería artesanal</p>
+                                <h2 className="logo-title font-light text-base md:text-3xl tracking-widest">ALAS DE COLIBRÍ</h2>
+                                <p className="subtitle font-light text-sm logo-text">Bisutería artesanal</p>
                             </div>
                         </Link>
                     </div>
 
                     {/* Navegación Desktop */}
-                    <nav className="hidden md:flex gap-2">
-                        <Link to="/" className="hover:text-turquesa-suave-700 p-3 text-xl">Inicio</Link>
-                        <Link to="/crear-tu-joya" className="hover:text-turquesa-suave-700 p-3 text-xl">Crear tu Joya</Link>
-                        <Link to="/joya-personalizada" className="hover:text-turquesa-suave-700 p-3 text-xl">Joya Personalizada</Link>
-                        <Link to="/sobre-nosotros" className="hover:text-turquesa-suave-700 p-3 text-xl">Sobre Nosotros</Link>
-                        <Link to="/contacto" className="hover:text-turquesa-suave-700 p-3 text-xl">Contacto</Link>
+                    <nav className="hidden md:flex gap-2 text-links-nav">
+                        <Link to="/" className="hover:text-links-hover p-3 text-base">Inicio</Link>
+                        <Link to="/crear-tu-joya" className="hover:text-links-hover p-3 text-base">Crear tu Joya</Link>
+                        <Link to="/joya-personalizada" className="hover:text-links-hover p-3 text-base">Joya Personalizada</Link>
+                        <Link to="/sobre-nosotros" className="hover:text-links-hover p-3 text-base">Sobre Nosotros</Link>
+                        <Link to="/contacto" className="hover:text-links-hover p-3 text-base">Contacto</Link>
                     </nav>
 
                     {/* Botón menu hamburguesa responsive */}
