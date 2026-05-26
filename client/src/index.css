@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Archivo:ital,wght@0,100..900;1,100..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @import "tailwindcss";
 
@@ -25,12 +26,19 @@
   /* FONDOS Y SUPERFICIES */
   --color-crema: #F7F4EE; /*Fondo general de la página*/
   --color-blanco: #FFFFFF; /*Tarjetas de productos*/
-  --color-menta-suave: #EDF6F4 /*Fondo del header y footer*/
+  --color-menta-suave: #EDF6F4; /*Fondo del header y footer*/
+  --color-fondo-nav: #f9f6f0cc;/*Fondo header*/
+  --color-borde-nav: #eae3d2; /*Fondo borde navbar*/
+  --color-fondo-boton: #b58c65;/*botones - antes #c59972*/
+  --color-hover-boton: #a17c5a;
+  --color-meet-boton: #c99c71;
 
   /* TEXTO  */
   --color-verde-oscuro: #2C4A45; /*Texto principal, títulos, nav*/
   --color-grisaceo: #5A7A75; /*Texto secundarios, descripciones*/
   --color-verde-tenue: #9BB5B0; /*Placeholder, texto desactivado*/
+  --color-links-nav: #58675f;
+  --color-links-hover: #116466;
 
   /* Otra gama  */
   --color-ment-soft: #C9E8E6; /*Secciones o tarjetas*/
@@ -208,8 +216,11 @@
   /* --base-text: 'Lora', 'Georgia', serif;
   --heading: 'Playfair Display', 'Georgia', serif; */
 
-  --base-text: "Cormorant Garamond",
+  --heading-text: "Cormorant Garamond",
     serif;
+  /* --base-text: "Outfit",
+    sans-serif; */
+  --font-outfit: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --heading: "Josefin Sans",
     sans-serif;
   /* --mono: ui-monospace, Consolas, monospace; */
@@ -259,7 +270,8 @@ html, body {
 
 body {
   width: 100%;
-  font-family: var(--base-text);
+  font-family: var(--font-outfit);
+  /* font-family: var(--base-text); */
   /* font-family: 'Lora', 'Georgia', serif; */
 }
 
@@ -273,13 +285,18 @@ body {
 }
 
 h1, h2 {
-  font-family: var(--heading);
+  /* font-family: var(--heading); */
+  font-family: var(--heading-text);
 }
 
-p, a {
+/* p, a {
   font-weight: 500;
-}
+} */
 
 .logo-title {
-  font-family: var(--base-text);
+  font-family: var(--font-outfit);
+}
+.subtitle {
+  /* font-family: var(--logo-text); */
+  font-family: var(--heading);
 }
