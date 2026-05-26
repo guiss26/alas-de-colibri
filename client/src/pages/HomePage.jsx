@@ -1,41 +1,33 @@
 import { Link } from "react-router-dom";
+import fotoBgExample from '/src/assets/foto-ej-portada.jpg'
 
 export default function HomePage() {
     return (
         <>
             {/* Hero section  */}
-            <section className="md:flex p-16 w-full gap-12 bg-gradient-to-br from-[#3d8f8f]/10 via-[#FFFCF5] to-[#3A8FA0]/10">  {/* Revisar ese degradado */}
-                <div className="w-3/5 px-10 flex flex-col justify-center">
-                    <span>Bisutería artesanal </span> {/* A lo mejor quitarlo  */}
-
-                    <h1 className="md:text-4xl">Joyas únicas, hechas con el corazón</h1>
-                    <p className="text-xl">Bienvenido a Alas de Colibrí, donde cada pieza de bisutería es creada artesanalmente con piedras naturales. Diseña tu joya perfecta o elige entre nuestros diseños únicos.</p>
+            <section style={{ backgroundImage: `url(${fotoBgExample})`}} className="flex justify-center items-center p-16 w-full min-h-screen gap-12 bg-cover bg-center text-center text-white">  {/* Revisar ese degradado */}
+                <div className="w-3xl flex flex-col items-center gap-5">
+                    <h1 className="text-4xl sm:text-6xl md:text-8xl font-medium">Joyas únicas, hechas con el corazón</h1>
+                    <p className="md:text-xl font-light mx-7">Bienvenido a Alas de Colibrí, donde cada pieza de bisutería es creada artesanalmente con piedras naturales. Diseña tu joya perfecta o elige entre nuestros diseños únicos.</p>
 
                     <div className="flex gap-3 mt-5"> {/* Cambiar color botones, borde, hover y efectos */}
-                        {/* <button className="bg-teal py-2 px-4 rounded-3xl border-1 border-primary-dark-teal hover:bg-primary-turquoise transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">Crear tu Joya</button>
-                        <button className="bg-teal py-2 px-4 rounded-3xl border-1 border-primary-dark-teal hover:bg-primary-turquoise transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">Conócenos</button> */}
                         {/* Botón principal — acción principal */}
                         <Link
-                            to="/crea-tu-joya"
-                            className="bg-primary-turquoise text-white px-5 py-2 rounded-full hover:bg-dark-turquoise transition-colors transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                            to="/crear-tu-joya"
+                            className="bg-fondo-boton text-white px-5 py-2 rounded-full hover:bg-hover-boton transition-colors transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
                         >
                             Crear tu Joya
                         </Link>
 
                         {/* Botón secundario — acción secundaria */}
                         <Link
-                            to="/nosotros"
-                            className="border border-primary-turquoise text-primary-turquoise px-5 py-2 rounded-full hover:bg-dark-turquoise hover:text-white transition-colors transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                            to="/sobre-nosotros"
+                            className="border border-fondo-boton text-fondo-boton px-5 py-2 rounded-full hover:bg-meet-boton/40 hover:text-white transition-colors transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
                         >
                             Conócenos
                         </Link>
                     </div>
                 </div>
-
-                <figure className="w-2/5 bg-green-300">
-                    <img src="https://placehold.co/500x500"  alt="imagen-ejemplo" />
-                </figure>
-
             </section>
 
             {/* Features - ¿Por qué Alas de Colibrí? */}
@@ -59,7 +51,7 @@ export default function HomePage() {
                 </div>
             </section>
 
-            {/* Jewelry example - Nuestras Creaciones */}
+            {/* Jewelry example - Nuestras Creaciones - SE DESBORDA LAS TARJETAS*/}
             <section className="bg-gradient-to-br from-[#D4AF37]/10 via-[#FFFCF5] to-[#87A878]/10 text-center p-20">
                 <h2 className="md:text-3xl">Nuestras creaciones</h2>
                 <p className="mt-3">Explora algunos ejemplos de nuestra bisutería artesanal</p>
@@ -116,7 +108,7 @@ export default function HomePage() {
             </section>
 
             {/* Custom Jewerly - Creamos Joyas Personalizadas */}
-            <section className="bg-[#FFFCF5] text-center">
+            <section className="bg-[#FFFCF5] text-center p-20">
                 <h2 className="md:text-3xl">¿Tienes una idea especial?</h2>
                 <p>Creamos joyas personalizadas según tus deseos. Cuéntanos tu idea y la haremos realidad</p>
 
