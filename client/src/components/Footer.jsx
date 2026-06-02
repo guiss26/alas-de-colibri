@@ -15,10 +15,12 @@ export default function Footer() {
 
                     <div className="flex-1 flex flex-col gap-3 px-5">
                         <h3 className="text-xl text-coffe-caramel">Enlaces</h3>
-                        <Link className="text-xs md:text-sm font-light">Inicio</Link>
-                        <Link className="text-xs md:text-sm font-light">Crear tu Joya</Link>
-                        <Link className="text-xs md:text-sm font-light">Sobre Nosotros</Link>
-                        <Link className="text-xs md:text-sm font-light">Contacto</Link>
+                        <Link className="text-xs md:text-sm font-light" to="/">Inicio</Link>
+                        <Link className="text-xs md:text-sm font-light" to="/catalogo">Catálogo</Link>
+                        <Link className="text-xs md:text-sm font-light" to="/crear-tu-joya">Crear tu Joya</Link>
+                        <Link className="text-xs md:text-sm font-light" to="/joya-personalizada">Joya personalizada</Link>
+                        <Link className="text-xs md:text-sm font-light" to="/sobre-nosotros">Sobre Nosotros</Link>
+                        <Link className="text-xs md:text-sm font-light" to="/contacto">Contacto</Link>
                     </div>
 
                     <div className="flex-1 flex flex-col gap-3 px-5">
