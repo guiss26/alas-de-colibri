@@ -24,6 +24,7 @@ export default function Navbar() {
                     {/* Navegación Desktop */}
                     <nav className="hidden md:flex gap-2 text-links-nav">
                         <Link to="/" className="hover:text-links-hover p-3 text-base">Inicio</Link>
+                        <Link to="/catalogo" className="hover:text-links-hover p-3 text-base">Catálogo</Link>
                         <Link to="/crear-tu-joya" className="hover:text-links-hover p-3 text-base">Crear tu Joya</Link>
                         <Link to="/joya-personalizada" className="hover:text-links-hover p-3 text-base">Joya Personalizada</Link>
                         <Link to="/sobre-nosotros" className="hover:text-links-hover p-3 text-base">Sobre Nosotros</Link>
@@ -35,17 +36,6 @@ export default function Navbar() {
                         {isOpen ? <IoIosClose className="md:size-8 sm:size-5" />
                             : <IoIosMenu className="md:size-8 sm:size-5" />}
                     </button>
-
-                    {/* Navegación Móvil */}
-                    {/* {isOpen && (
-                        <nav className="md:hidden flex flex-col bg-red-400 border-t border-gray-100">
-                            <Link onClick={() => setIsOpen(false)} to="/" className="hover:text-gray-700 hover:bg-almond-silk-100/70 p-3">Inicio</Link>
-                            <Link onClick={() => setIsOpen(false)} to="/crear-tu-joya" className="hover:text-gray-700 hover:bg-almond-silk-100/70 p-3">Crear tu Joya</Link>
-                            <Link onClick={() => setIsOpen(false)} to="/joya-personalizada" className="hover:text-gray-700 hover:bg-almond-silk-100/70 p-3">Joya Personalizada</Link>
-                            <Link onClick={() => setIsOpen(false)} to="/sobre-nosotros" className="hover:text-gray-700 hover:bg-almond-silk-100/70 p-3">Sobre Nosotros</Link>
-                            <Link onClick={() => setIsOpen(false)} to="/contacto" className="hover:text-gray-700 hover:bg-almond-silk-100/70 p-3">Contacto</Link>
-                        </nav>
-                    )} */}
                 </div>
             </header>
 
@@ -53,6 +43,7 @@ export default function Navbar() {
             {isOpen && (
                 <nav className="md:hidden flex flex-col bg-turquesa-suave-400/30 border-t border-gray-100">
                     <Link onClick={() => setIsOpen(false)} to="/" className="hover:text-gray-700 hover:bg-turquesa-suave-400/40 py-3 p-5 text-sm md:text-base">Inicio</Link>
+                    <Link onClick={() => setIsOpen(false)} to="/catalogo" className="hover:text-gray-700 hover:bg-turquesa-suave-400/40 py-3 p-5 text-sm md:text-base">Catálogo</Link>
                     <Link onClick={() => setIsOpen(false)} to="/crear-tu-joya" className="hover:text-gray-700 hover:bg-turquesa-suave-400/40 py-3 p-5  text-sm md:text-base">Crear tu Joya</Link>
                     <Link onClick={() => setIsOpen(false)} to="/joya-personalizada" className="hover:text-gray-700 hover:bg-turquesa-suave-400/40 py-3 p-5 text-sm md:text-base">Joya Personalizada</Link>
                     <Link onClick={() => setIsOpen(false)} to="/sobre-nosotros" className="hover:text-gray-700 hover:bg-turquesa-suave-400/40 py-3 p-5 text-sm md:text-base">Sobre Nosotros</Link>
