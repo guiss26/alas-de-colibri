@@ -6,6 +6,7 @@ import JewelryBuilderPage from "../pages/JewelryBuilderPage";
 import AboutPage from "../pages/AboutPage";
 import ContactPage from "../pages/ContactPage";
 import HomePage from "../pages/HomePage";
+import CatalogPage from "../pages/CatalogPage";
 
 const routerClient = createBrowserRouter([{
     path: "/",
@@ -14,6 +15,10 @@ const routerClient = createBrowserRouter([{
         {
             index: true,
             element: <HomePage />
+        },
+        {
+            path: "catalogo",
+            element: <CatalogPage />
         },
         {
             path: "crear-tu-joya",
