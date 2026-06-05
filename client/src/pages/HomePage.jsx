@@ -41,22 +41,6 @@ export default function HomePage() {
             <section className="bg-[#3d8f8f]/5 text-center p-20">
                 <h2 className="text-4xl sm:text-5xl">¿Por qué Alas de Colibrí?</h2>
 
-                {/* <div className="flex gap-8 mt-10 justify-between"> */}
-                    {/* cambiar texto referencia insta  */}
-                    {/* <div className="bg-blanco py-10 px-6 rounded-xl shadow-lg">
-                        <h3 className="text-3xl mb-5">Hecho a mano</h3>
-                        <p className="text-neutral-700">Cada pieza es creada con dedicación y cuidado, haciendo única cada joya.</p>
-                    </div>
-                    <div className="bg-blanco py-10 px-6 rounded-xl shadow-lg">
-                        <h3 className="text-3xl mb-5">Piedras naturales</h3>
-                        <p className="text-neutral-700">Utilizamos piedras semipreciosas auténticas de la mejor calidad.</p>
-                    </div>
-                    <div className="bg-blanco py-10 px-6 rounded-xl shadow-lg">
-                        <h3 className="text-3xl mb-5">Diseño único</h3>
-                        <p className="text-neutral-700">Personaliza tu joya o elige entre nuestros diseños artesanales.</p>
-                    </div> */}
-                {/* </div> */}
-
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
                     <div className="bg-blanco py-10 px-6 rounded-xl shadow-lg flex flex-col">
                         <h3 className="text-3xl mb-5">Hecho a mano</h3>
@@ -81,7 +65,7 @@ export default function HomePage() {
                 <div className="my-16 flex gap-x-4 gap-y-8 justify-evenly flex-wrap">
                     <div className="bg-white w-[250px] flex-shrink-0 flex flex-col rounded-xl shadow-lg">
                         <figure className="flex flex-col h-full">
-                            <img src="https://placehold.co/250x350" alt="anillos" className="rounded-tl-xl rounded-tr-xl" />
+                            <img src="https://images.unsplash.com/photo-1627924448060-09c9b0d229c6?w=250&h=350&fit=crop" alt="anillos" className="rounded-tl-xl rounded-tr-xl" />
                             <figcaption className="py-5 px-3 flex flex-col flex-1">
                                 <h3 className="md:text-2xl font-[heading-text]">Anillos</h3>
                                 <p className="text-neutral-700 text-sm">Plata de ley con piedras naturales</p>
@@ -91,7 +75,7 @@ export default function HomePage() {
 
                     <div className="bg-white w-[250px] flex-shrink-0 flex flex-col rounded-xl shadow-lg">
                         <figure className="flex flex-col h-full">
-                            <img src="https://placehold.co/250x350" alt="pulseras" className="rounded-tl-xl rounded-tr-xl" />
+                            <img src="https://images.unsplash.com/photo-1643081268670-726891d9ae52?w=250&h=350&fit=crop" alt="pulseras" className="rounded-tl-xl rounded-tr-xl" />
                             <figcaption className="py-5 px-3 flex flex-col flex-1">
                                 <h3 className="md:text-2xl font-[heading-text]">Pulseras</h3>
                                 <p className="text-neutral-700 text-sm">Diseños artesanales únicos</p>
@@ -101,7 +85,7 @@ export default function HomePage() {
 
                     <div className="bg-white w-[250px] flex-shrink-0 flex flex-col rounded-xl shadow-lg">
                         <figure className="flex flex-col h-full">
-                            <img src="https://placehold.co/250x350" alt="colgantes" className="rounded-tl-xl rounded-tr-xl" />
+                            <img src="https://images.unsplash.com/photo-1727430522198-69a12bd2e969?w=250&h=350&fit=crop" alt="colgantes" className="rounded-tl-xl rounded-tr-xl" />
                             <figcaption className="py-5 px-3 flex flex-col flex-1">
                                 <h3 className="md:text-2xl font-[heading-text]">Colgantes</h3>
                                 <p className="text-neutral-700 text-sm">Elegancia y originalidad</p>
@@ -111,7 +95,7 @@ export default function HomePage() {
 
                     <div className="bg-white w-[250px] flex-shrink-0 flex flex-col rounded-xl shadow-lg">
                         <figure className="flex flex-col h-full">
-                            <img src="https://placehold.co/250x350" alt="pendientes" className="rounded-tl-xl rounded-tr-xl" />
+                            <img src="https://images.unsplash.com/photo-1646031348680-0756f9eb8b9e?w=250&h=350&fit=crop" alt="pendientes" className="rounded-tl-xl rounded-tr-xl" />
                             <figcaption className="py-5 px-3 flex flex-col flex-1">
                                 <h3 className="md:text-2xl font-[heading-text]">Pendientes</h3>
                                 <p className="text-neutral-700 text-sm">Piezas únicas para cada ocasión </p>
