@@ -3,7 +3,8 @@ export const jewelry = [
         id: 1,
         name: "Anillo piedra turquesa",
         type: "ring",           // para filtrar
-        description: "Anillo artesanal con piedra turquesa",
+        stone: "Turquesa",
+        // description: "Anillo artesanal con piedra turquesa",
         image: "https://placehold.co/400x400/B8E0D8/2C4A45?text=Anillo",
         featured: true          // para mostrar en la HomePage
     },
@@ -11,7 +12,8 @@ export const jewelry = [
         id: 2,
         name: "Anillo piedra labradorita",
         type: "ring",
-        description: "Collar con piedra labradorita engarzada a mano",
+        stone: "Labradorita",
+        // description: "Collar con piedra labradorita engarzada a mano",
         image: "https://placehold.co/400x400/B8E0D8/2C4A45?text=Collar",
         featured: true
     },
@@ -19,7 +21,8 @@ export const jewelry = [
         id: 3,
         name: "Anillo piedra cuarzo rosa",
         type: "ring",
-        description: "Anillo delicado con cuarzo rosa en plata de ley",
+        stone: "Cuarzo rosa",
+        // description: "Anillo delicado con cuarzo rosa en plata de ley",
         image: "https://placehold.co/400x400/B8E0D8/2C4A45?text=Anillo",
         featured: false
     },
@@ -27,7 +30,8 @@ export const jewelry = [
         id: 4,
         name: "Collar piedra labradorita",
         type: "necklace",
-        description: "Collar con piedra labradorita engarzada a mano",
+        stone: "Labradorita",
+        // description: "Collar con piedra labradorita engarzada a mano",
         image: "https://placehold.co/400x400/B8E0D8/2C4A45?text=Collar",
         featured: true
     },
@@ -35,7 +39,8 @@ export const jewelry = [
         id: 5,
         name: "Collar piedra amatista",
         type: "necklace",
-        description: "Collar con piedra amatista en cadena de plata",
+        stone: "Amatista",
+        // description: "Collar con piedra amatista en cadena de plata",
         image: "https://placehold.co/400x400/B8E0D8/2C4A45?text=Collar",
         featured: false
     },
@@ -43,7 +48,8 @@ export const jewelry = [
         id: 6,
         name: "Collar piedra turquesa",
         type: "necklace",
-        description: "Colgante artesanal con piedra turquesa",
+        stone: "Turquesa",
+        // description: "Colgante artesanal con piedra turquesa",
         image: "https://placehold.co/400x400/B8E0D8/2C4A45?text=Collar",
         featured: false
     },
@@ -51,7 +57,8 @@ export const jewelry = [
         id: 7,
         name: "Pendientes piedra amatista",
         type: "earring",
-        description: "Pendientes con piedra amatista en plata de ley",
+        stone: "Amatista",
+        // description: "Pendientes con piedra amatista en plata de ley",
         image: "https://placehold.co/400x400/B8E0D8/2C4A45?text=Pendientes",
         featured: true
     },
@@ -59,7 +66,8 @@ export const jewelry = [
         id: 8,
         name: "Pendientes piedra turquesa",
         type: "earring",
-        description: "Pendientes artesanales con piedra turquesa",
+        stone: "Turquesa",
+        // description: "Pendientes artesanales con piedra turquesa",
         image: "https://placehold.co/400x400/B8E0D8/2C4A45?text=Pendientes",
         featured: false
     },
@@ -67,7 +75,8 @@ export const jewelry = [
         id: 9,
         name: "Pendientes piedra labradorita",
         type: "earring",
-        description: "Pendientes con destellos iridiscentes de labradorita",
+        stone: "Labradorita",
+        // description: "Pendientes con destellos iridiscentes de labradorita",
         image: "https://placehold.co/400x400/B8E0D8/2C4A45?text=Pendientes",
         featured: false
     },
@@ -75,7 +84,8 @@ export const jewelry = [
         id: 10,
         name: "Pulsera cuarzo rosa",
         type: "bracelet",
-        description: "Pulsera trenzada con cuarzo rosa",
+        stone: "Cuarzo rosa",
+        // description: "Pulsera trenzada con cuarzo rosa",
         image: "https://placehold.co/400x400/B8E0D8/2C4A45?text=Pulsera",
         featured: true
     },
@@ -83,7 +93,8 @@ export const jewelry = [
         id: 11,
         name: "Pulsera piedra turquesa",
         type: "bracelet",
-        description: "Pulsera artesanal con piedra turquesa central",
+        stone: "Turquesa",
+        // description: "Pulsera artesanal con piedra turquesa central",
         image: "https://placehold.co/400x400/B8E0D8/2C4A45?text=Pulsera",
         featured: false
     },
@@ -91,7 +102,8 @@ export const jewelry = [
         id: 12,
         name: "Pulsera piedra amatista",
         type: "bracelet",
-        description: "Pulsera enrollada a mano con piedra amatista",
+        stone: "Amatista",
+        // description: "Pulsera enrollada a mano con piedra amatista",
         image: "https://placehold.co/400x400/B8E0D8/2C4A45?text=Pulsera",
         featured: false
     }
