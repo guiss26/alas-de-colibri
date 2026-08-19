@@ -36,10 +36,9 @@ export default function CatalogPage() {
                 <section className="mt-12 grid grid-cols-1 gap-6 md:w-[970px] md:grid-cols-[repeat(3,300px)] md:justify-between ">
 
                     {filteredJewelry.map((item) => (
-                        <div key={item.id} className="border border-almond-silk-500/20 w-[300px]">
+                        <div key={item.id} className="border border-almond-silk-500/20 w-[300px] hover:-translate-y-1 transition-all duration-300 cursor-pointer">
                             <figure className="grid *:col-start-1 *:row-start-1">
                                 <img src={item.image} alt={item.name}/>
-                                <span className="uppercase text-neutral-500 bg-neutral-200/70 py-2 px-4 self-start justify-self-end m-3 text-sm">{typeLabels[item.type]}</span>
                             </figure>
 
                             <figcaption className="p-5">
