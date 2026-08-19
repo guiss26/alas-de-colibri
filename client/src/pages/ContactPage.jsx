@@ -27,6 +27,11 @@ export default function ContactPage() {
             )
             setSuccess(true)
             reset()
+
+            // setTimeout(() => {
+            //     setSuccess(true)
+            // }, 3000)
+
         } catch (error) {
             console.error(error)
             setError(true)
@@ -110,11 +115,11 @@ export default function ContactPage() {
                             {errors.message?.type === 'required' && <p className="text-red-700">Este campo es requerido</p>}
                         </div>
 
-                        {success && <p className="text-green-600 mb-4">¡Mensaje enviado correctamente! Te responderemos lo más pronto posible.</p>}
+                        {success && <p className="text-green-600 mb-4 text-sm">¡Mensaje enviado correctamente! Te responderemos lo más pronto posible.</p>}
                         {error && <p className="text-red-700 mb-4">Ha ocurrido un error. Por favor inténtalo de nuevo.</p>}
 
 
-                        <button type="submit" className="bg-almond-silk-300/50 hover:bg-almond-silk-500/40 w-full py-4 rounded-xl" disabled={sending}>
+                        <button type="submit" className="bg-fondo-boton/90 hover:bg-hover-boton w-full py-4 rounded-xl" disabled={sending}>
                             {sending ? 'Enviando...' : 'Enviar'}
                         </button>
                     </form>
