@@ -37,7 +37,7 @@ export default function ContactPage() {
 
     return (
         <>
-            <div className="px-20 pt-12 pb-20">
+            <div className="px-5 md:px-20 pt-12 pb-20">
                 <h1 className="text-4xl xs:text-5xl sm:text-6xl md:text-8xl font-medium text-center">Contacto</h1>
                 <h3 className="text-center text-neutral-600 sm:text-xl mt-5 mb-10">¿Tienes alguna pregunta? Nos encantaría saber de ti</h3>
 
@@ -80,7 +80,7 @@ export default function ContactPage() {
 
                     </div>
 
-                    <form ref={formRef} className="bg-blanco border border-almond-silk-300/30 p-7 rounded-xl" onSubmit={handleSubmit(onSubmit)}>
+                    <form ref={formRef} className="bg-blanco border border-almond-silk-300/30 p-7 rounded" onSubmit={handleSubmit(onSubmit)}>
                         <h2 className="font-heading-text text-2xl sm:text-3xl md:text-4xl mb-7">Envíanos un mensaje</h2>
 
                         <div className="flex flex-col gap-3 mb-5">
