@@ -34,8 +34,8 @@ export default function HomePage() {
             </section>
 
             {/* Description */}
-            <section className="flex flex-col justify-center items-center p-20">
-                <h2 className="text-4xl sm:text-5xl mb-8">Bisutería artesanal con el corazón</h2>
+            <section className="flex flex-col justify-center items-center px-8 py-20 md:p-20">
+                <h2 className="text-4xl sm:text-5xl mb-8 text-center">Bisutería artesanal con el corazón</h2>
                 <p className="text-neutral-600 w-full max-w-3xl text-center mb-6 text-base/7">Somos un pequeño taller de bisutería artesanal donde cada pieza creada nace de nuestras manos. Trabajamos con piedras naturales cuidadosamente seleccionadas para crear anillos, pulseras, colgantes y pendientes que reflejan la belleza de lo artesanal. Cada diseño es único, pensado para acompañarte en tu día a día.</p>
                 <Link to="/sobre-nosotros" className="border border-verde-oscuro py-2 px-5 rounded-full text-verde-oscuro hover:bg-verde-oscuro/80 hover:text-white transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">Conoce nuestra historia</Link>
             </section>
@@ -61,7 +61,7 @@ export default function HomePage() {
             </section>
 
             {/* Jewelry example - Nuestras Creaciones */}
-            <section className="bg-gradient-to-br from-[#D4AF37]/10 via-[#FFFCF5] to-[#87A878]/10 text-center p-20">
+            <section className="bg-gradient-to-br from-[#D4AF37]/10 via-[#FFFCF5] to-[#87A878]/10 text-center px-5 py-20 md:p-20">
                 <h2 className="text-4xl sm:text-5xl">Nuestras creaciones</h2>
                 <p className="mt-3 text-neutral-700">Explora algunos ejemplos de nuestra tienda</p>
 
@@ -116,12 +116,12 @@ export default function HomePage() {
             </section>
 
             {/* Design your ideal jewelry - Creamos Joyas Personalizadas */}
-            <section className="bg-[#FFFCF5] flex flex-col justify-center items-center text-center gap-5 p-20">
+            <section className="bg-[#FFFCF5] flex flex-col justify-center items-center text-center gap-5 py-20 px-5 md:p-20">
                 <h2 className="text-4xl sm:text-5xl">Diseña tu joya ideal</h2>
                 <p className="w-full max-w-2xl text-neutral-700">Elige tu piedra favorita, selecciona un diseño y crea una pieza que sea verdaderamente tuya. O solicita una joya completamente personalizada</p>
 
-                <div className="flex flex-col md:flex-row justify-center items-center gap-4">
-                    <Link to="/crear-tu-joya" className="bg-fondo-boton text-white px-5 py-2 rounded-full hover:bg-hover-boton transition-colors transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">Crear joya</Link>
+                <div className="flex flex-col md:flex-row justify-center items-center gap-2 mt-6">
+                    <Link to="/crear-tu-joya" className="bg-fondo-boton text-white px-6 py-2 rounded-full hover:bg-hover-boton transition-colors transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">Crear joya</Link>
                     <Link to="/joya-personalizada" className="border border-verde-oscuro py-2 px-5 rounded-full text-verde-oscuro hover:bg-verde-oscuro/80 hover:text-white transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">Solicitar joya personalizada</Link>
                 </div>
             </section>
