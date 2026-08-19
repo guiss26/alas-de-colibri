@@ -2,15 +2,18 @@ import { Link } from "react-router-dom";
 import fotoBgExample from '/src/assets/foto-ej-portada.jpg'
 
 export default function HomePage() {
+    //datos hardcodeados de jewelry.js (también HomePage.jsx)
     return (
         <>
             {/* Hero section  */}
-            <section style={{ backgroundImage: `url(${fotoBgExample})` }} className="flex justify-center items-center p-16 w-full min-h-screen gap-12 bg-cover bg-center text-center text-white">  {/* Revisar ese degradado */}
-                <div className="w-3xl flex flex-col items-center gap-5">
+            <section style={{ backgroundImage: `url(${fotoBgExample})` }} className="relative flex justify-center items-center p-5 md:p-16 w-full min-h-screen gap-12 bg-cover bg-center text-center text-white"> 
+                <div className="absolute inset-0 bg-black/50"></div>
+
+                <div className="relative z-10 w-3xl flex flex-col items-center gap-5">
                     <h1 className="text-4xl sm:text-6xl md:text-8xl font-medium">Joyas únicas, hechas con el corazón</h1>
                     <p className="md:text-xl font-light mx-7">Bienvenido a Alas de Colibrí, donde cada pieza de bisutería es creada artesanalmente con piedras naturales. Diseña tu joya perfecta o elige entre nuestros diseños únicos.</p>
 
-                    <div className="flex gap-3 mt-5"> {/* Cambiar color botones, borde, hover y efectos */}
+                    <div className="flex gap-3 mt-5"> 
                         {/* Botón principal — acción principal */}
                         <Link
                             to="/crear-tu-joya"
