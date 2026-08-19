@@ -37,19 +37,20 @@ export default function Navbar() {
                             : <IoIosMenu className="md:size-8 sm:size-5" />}
                     </button>
                 </div>
-            </header>
 
-            {/* Navegación Móvil */}
-            {isOpen && (
-                <nav className="md:hidden flex flex-col bg-turquesa-suave-400/30 border-t border-gray-100">
-                    <Link onClick={() => setIsOpen(false)} to="/" className="hover:text-gray-700 hover:bg-turquesa-suave-400/40 py-3 p-5 text-sm md:text-base">Inicio</Link>
-                    <Link onClick={() => setIsOpen(false)} to="/catalogo" className="hover:text-gray-700 hover:bg-turquesa-suave-400/40 py-3 p-5 text-sm md:text-base">Catálogo</Link>
-                    <Link onClick={() => setIsOpen(false)} to="/crear-tu-joya" className="hover:text-gray-700 hover:bg-turquesa-suave-400/40 py-3 p-5  text-sm md:text-base">Crear tu Joya</Link>
-                    <Link onClick={() => setIsOpen(false)} to="/joya-personalizada" className="hover:text-gray-700 hover:bg-turquesa-suave-400/40 py-3 p-5 text-sm md:text-base">Joya Personalizada</Link>
-                    <Link onClick={() => setIsOpen(false)} to="/sobre-nosotros" className="hover:text-gray-700 hover:bg-turquesa-suave-400/40 py-3 p-5 text-sm md:text-base">Sobre Nosotros</Link>
-                    <Link onClick={() => setIsOpen(false)} to="/contacto" className="hover:text-gray-700 hover:bg-turquesa-suave-400/40 py-3 p-5 text-sm md:text-base">Contacto</Link>
-                </nav>
-            )}
+
+                {/* Navegación Móvil */}
+                {isOpen && (
+                    <nav className="md:hidden flex flex-col bg-turquesa-suave-400/30 border-t border-gray-100">
+                        <Link onClick={() => setIsOpen(false)} to="/" className="hover:text-gray-700 hover:bg-turquesa-suave-400/40 py-3 p-5 text-sm md:text-base">Inicio</Link>
+                        <Link onClick={() => setIsOpen(false)} to="/catalogo" className="hover:text-gray-700 hover:bg-turquesa-suave-400/40 py-3 p-5 text-sm md:text-base">Catálogo</Link>
+                        <Link onClick={() => setIsOpen(false)} to="/crear-tu-joya" className="hover:text-gray-700 hover:bg-turquesa-suave-400/40 py-3 p-5  text-sm md:text-base">Crear tu Joya</Link>
+                        <Link onClick={() => setIsOpen(false)} to="/joya-personalizada" className="hover:text-gray-700 hover:bg-turquesa-suave-400/40 py-3 p-5 text-sm md:text-base">Joya Personalizada</Link>
+                        <Link onClick={() => setIsOpen(false)} to="/sobre-nosotros" className="hover:text-gray-700 hover:bg-turquesa-suave-400/40 py-3 p-5 text-sm md:text-base">Sobre Nosotros</Link>
+                        <Link onClick={() => setIsOpen(false)} to="/contacto" className="hover:text-gray-700 hover:bg-turquesa-suave-400/40 py-3 p-5 text-sm md:text-base">Contacto</Link>
+                    </nav>
+                )}
+            </header>
         </>
     )
 }
