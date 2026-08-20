@@ -5,18 +5,17 @@ import { BsTelephone } from "react-icons/bs";
 import { useForm } from "react-hook-form";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser"
+import toast from "react-hot-toast";
 
 export default function ContactPage() {
     const { register, formState: { errors }, handleSubmit, reset } = useForm()
     const formRef = useRef()
     const [sending, setSending] = useState(false)
-    const [success, setSuccess] = useState(false)
-    const [error, setError] = useState(false)
 
     const onSubmit = async() => {
         setSending(true)
-        setSuccess(false)
-        setError(false)
+        // setSuccess(false)
+        // setError(false)
 
         try {
             await emailjs.sendForm(
@@ -25,16 +24,15 @@ export default function ContactPage() {
                 formRef.current,
                 import.meta.env.VITE_EMAILJS_PUBLIC_KEY
             )
-            setSuccess(true)
+            // setSuccess(true)
+            toast.success('¡Mensaje enviado correctamente! T responderemos pronto.', {
+                duration: 4000
+            })
             reset()
-
-            // setTimeout(() => {
-            //     setSuccess(true)
-            // }, 3000)
-
         } catch (error) {
             console.error(error)
-            setError(true)
+            // setError(true)
+            toast.error('Ha ocurrido un error. Por favor inténtalo de nuevo.')
         } finally {
             setSending(false)
         }
@@ -89,34 +87,34 @@ export default function ContactPage() {
                         <h2 className="font-heading-text text-2xl sm:text-3xl md:text-4xl mb-7">Envíanos un mensaje</h2>
 
                         <div className="flex flex-col gap-3 mb-5">
-                            <label htmlFor="name" className="text-sm sm:text-base">Nombre</label>
-                            <input type="text" id="name" name="name" className="bg-almond-silk-100/40 p-3 rounded border border-almond-silk-200/10 text-sm sm:text-base" {...register('name', {
+                            <label htmlFor="name" className="text-sm sm:text-base font-light">Nombre</label>
+                            <input type="text" id="name" name="name" className="bg-almond-silk-100/40 p-3 rounded border border-almond-silk-200/10 text-sm sm:text-base font-light" {...register('name', {
                                 required: true
                             })} />
-                            {errors.name?.type === 'required' && <p className="text-red-700">El nombre es obligatorio</p>}
+                            {errors.name?.type === 'required' && <p className="text-red-700 text-sm">El nombre es obligatorio</p>}
                         </div>
 
                         <div className="flex flex-col gap-3 mb-5">
-                            <label htmlFor="email" className="text-sm sm:text-base">Email</label>
-                            <input type="email" id="email" name="email" className="bg-almond-silk-100/40 p-3 rounded border border-almond-silk-200/10 text-sm sm:text-base" {...register('email', {
+                            <label htmlFor="email" className="text-sm sm:text-base font-light">Email</label>
+                            <input type="email" id="email" name="email" className="bg-almond-silk-100/40 p-3 rounded border border-almond-silk-200/10 text-sm sm:text-base font-light" {...register('email', {
                                 required: true,
                                 // pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/i,
                                 pattern: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/,
                             })} />
-                            {errors.email?.type === 'required' && <p className="text-red-700">El email es obligatorio</p>} 
-                            {errors.email?.type === 'pattern' && <p className="text-red-700">El formato del email es incorrecto</p>}
+                            {errors.email?.type === 'required' && <p className="text-red-700 text-sm">El email es obligatorio</p>} 
+                            {errors.email?.type === 'pattern' && <p className="text-red-700 text-sm">El formato del email es incorrecto</p>}
                         </div>
 
                         <div className="flex flex-col gap-3 mb-5">
-                            <label htmlFor="message" className="text-sm sm:text-base">Mensaje</label>
-                            <textarea id="message" name="message" className="bg-almond-silk-100/40 p-3 rounded border border-almond-silk-200/10 text-sm sm:text-base" {...register('message', {
+                            <label htmlFor="message" className="text-sm sm:text-base font-light">Mensaje</label>
+                            <textarea id="message" name="message" className="bg-almond-silk-100/40 p-3 rounded border border-almond-silk-200/10 text-sm sm:text-base font-light" {...register('message', {
                                 required: true
                             })} ></textarea>
-                            {errors.message?.type === 'required' && <p className="text-red-700">Este campo es requerido</p>}
+                            {errors.message?.type === 'required' && <p className="text-red-700 text-sm">Este campo es requerido</p>}
                         </div>
 
-                        {success && <p className="text-green-600 mb-4 text-sm">¡Mensaje enviado correctamente! Te responderemos lo más pronto posible.</p>}
-                        {error && <p className="text-red-700 mb-4">Ha ocurrido un error. Por favor inténtalo de nuevo.</p>}
+                        {/* {success && <p className="text-green-600 mb-4 text-sm">¡Mensaje enviado correctamente! Te responderemos lo más pronto posible.</p>}
+                        {error && <p className="text-red-700 mb-4">Ha ocurrido un error. Por favor inténtalo de nuevo.</p>} */}
 
 
                         <button type="submit" className="bg-fondo-boton/90 hover:bg-hover-boton w-full py-4 rounded-xl" disabled={sending}>
