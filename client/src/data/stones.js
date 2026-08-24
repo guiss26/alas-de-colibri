@@ -7,7 +7,7 @@ export const stones = [
         color: "",
         colorCode: "#5BCFCF",
         price: 15.00,
-        image: "https://unsplash.com/es/fotos/fragmento-de-piedra-azul-y-verde-2wrAmPvCwFE",
+        image: "https://loremflickr.com/150/100/turquoise,gemstone",
         avaible: true
     },
     {
@@ -17,7 +17,7 @@ export const stones = [
         color: "Violeta",
         colorCode: "#9B72CF",
         price: 12.00,
-        image: "https://unsplash.com/es/fotos/cristal-purpura-sobre-mesa-blanca-ToDanUwG4vs",
+        image: "https://loremflickr.com/150/100/amethyst,gemstone?lock=2",
         avaible: true
     },
     {
@@ -27,7 +27,7 @@ export const stones = [
         color: "Gris iridiscente",
         colorCode: "#7A9BB5",
         price: 18.00,
-        image: "https://unsplash.com/es/fotos/accesorio-ovalado-azul-y-negro-sobre-superficie-blanca-kHrrHMMG-ME",
+        image: "https://loremflickr.com/150/100/labradorite,gemstone?lock=3",
         avaible: true
     },
     {
@@ -37,7 +37,7 @@ export const stones = [
         color: "Rosa suave",
         colorCode: "#F4B8C1",
         price: 10.00,
-        image: "https://unsplash.com/es/fotos/una-piedra-preciosa-de-cuarzo-rosa-suave-y-rosa-F0WPL292Cdg",
+        image: "https://loremflickr.com/150/100/rosequartz,gemstone?lock=4",
         avaible: true
     },
     {
@@ -47,7 +47,7 @@ export const stones = [
         color: "Negro",
         colorCode: "#2C2C2C",
         price: 11.00,
-        image: "https://www.google.com/search?sca_esv=ae7b427e81070a13&rlz=1C1CHBF_esES881ES881&sxsrf=ANbL-n6XFKhZ6oYycYIF46eKlrxP3BArwA:1778614148876&udm=2&fbs=ADc_l-bpk8W4E-qsVlOvbGJcDwpn60DczFdcvPnuv8WQohHLTQJsEgZIYkjbgWUViY9fymDXzEJcyFKhH_lCR1_gOJpzdm6ThUGLrTvskwyqU5F1ELEtz-j79GZezjYg3fbSU7C_9NubUqfpq_ofzHBSKUgkjM7tGBVcsQK4WbHjRyU1MORXce0gqI6qVsqVVrDo58JVO3LZ3fqmlUROZ40jvDp04R8Miw&q=lodolita&sa=X&sqi=2&ved=2ahUKEwjD4aSEvrSUAxVUUaQEHY_SBZsQtKgLegQIFhAB&biw=1242&bih=545&dpr=1.1#sv=CAMSVhoyKhBlLXBGbUxtTWgtSGtfNDhNMg5wRm1MbU1oLUhrXzQ4TToOMkgzdkI5V0VMa0xOdk0gBCocCgZtb3NhaWMSEGUtcEZtTG1NaC1Ia180OE0YADABGAcg1NGx6QhKCBABGAEgASgB",
+        image: "https://loremflickr.com/150/100/lodolite,gemstone?lock=5",
         avaible: true
     }, 
     {
@@ -57,7 +57,7 @@ export const stones = [
         color: "Negro",
         colorCode: "#2C2C2C",
         price: 11.00,
-        image: "https://unsplash.com/es/fotos/un-objeto-negro-sentado-encima-de-un-suelo-blanco-Wu12UJK8QeE",
+        image: "https://loremflickr.com/150/100/obsidian,gemstone?lock=6",
         avaible: true
     },
     {
@@ -67,7 +67,7 @@ export const stones = [
         color: "Azul verdoso",
         colorCode: "#7FFFD4", 
         price: 12.00,
-        image: "https://unsplash.com/es/fotos/piedras-blancas-verdes-y-marrones-ET0qXpO-rLI",
+        image: "https://loremflickr.com/150/100/aquamarine,gemstone?lock=7",
         avaible: true
     }
 ]
