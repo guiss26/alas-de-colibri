@@ -2,56 +2,39 @@
 export const designs = [
     {
         id: 1,
-        name: "Anillo solitario",
+        name: "Anillo",
         type: "ring",
-        description: "Diseño minimalista con la piedra como protagonista",
+        // description: "Diseño minimalista con la piedra como protagonista",
         price: 25.00,
-        imagen: "https://unsplash.com/es/fotos/un-par-de-anillos-que-estan-sobre-una-mesa-d5qU27rehlk",
+        imagen: "https://images.unsplash.com/photo-1627924448060-09c9b0d229c6?w=150&h=100&fit=crop",
         includesChain: false
     },
     {
         id: 2,
-        name: "Anillo trenzado",
-        type: "ring",
-        description: "Banda de plata trenzada a mano con piedra central",
+        name: "Pendientes",
+        type: "earrings",
+        // description: "Banda de plata trenzada a mano con piedra central",
         price: 30.00,
-        imagen: "https://unsplash.com/es/fotos/un-anillo-de-oro-blanco-con-diamantes-Fux05TApirY",
+        imagen: "https://images.unsplash.com/photo-1643081268670-726891d9ae52?w=150&h=100&fit=crop",
         includesChain: false
     },
     {
         id: 3,
-        name: "Pulsera ",
+        name: "Pulsera",
         type: "bracelet",
-        description: "Hilo de plata trenzado artesanalmente con piedra central",
+        // description: "Hilo de plata trenzado artesanalmente con piedra central",
         price: 20.00,
-        imagen: "https://unsplash.com/es/fotos/un-brazalete-de-plata-con-un-corazon-nMvAcGHF0iQ",
+        imagen: "https://images.unsplash.com/photo-1727430522198-69a12bd2e969?w=150&h=100&fit=crop",
         includesChain: false
     },
     {
         id: 4,
-        name: "Colgante gota",
+        name: "Colgante",
         type: "pendant",
-        description: "Piedra engarzada en forma de gota, elegante y delicado",
-        price: 40.00,
-        imagen: "https://unsplash.com/es/fotos/un-collar-con-una-piedra-turquesa-colgando-de-una-cadena-de-plata-BJGh9RyuSls",
-        includesChain: false
-    },
-    {
-        id: 5,
-        name: "Pendientes",
-        type: "earrings",
-        description: "Pendientez de piedra en forma de gota",
-        price: 22.00,
-        imagen: "https://unsplash.com/es/fotos/pulsera-de-cuentas-de-oro-y-purpura-I4SU-rCPbX0",
-        includesChain: false
-    },
-    {
-        id: 6,
-        name: "Colgante espadas",
-        type: "pendant",
-        description: "Colgante de espadas enlazadas",
+        // description: "Piedra engarzada en forma de gota, elegante y delicado",
         price: 30.00,
-        imagen: "https://unsplash.com/es/fotos/una-mano-sostiene-un-collar-con-colgante-de-espadas-cruzadas-Xddqbavixqg",
+        imagen: "https://images.unsplash.com/photo-1646031348680-0756f9eb8b9e?w=150&h=100&fit=crop",
         includesChain: false
-    }
+    },
+    
 ]
