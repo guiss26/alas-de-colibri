@@ -282,7 +282,7 @@ body {
   max-width: 100%;
 }
 
-h1, h2, .font-contact-h3, .jewerly-title-catalog {
+h1, h2, .font-contact-h3, .jewerly-title-catalog, .font-data-jewelry {
   font-family: var(--heading-text);
 }
 
